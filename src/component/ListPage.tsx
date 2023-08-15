@@ -59,6 +59,7 @@ const ListPage = () => {
           placeholder="Search"
           data-testid="searchBox"
           className="Search"
+          inputProps={{ "data-testid": "search" }}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -91,7 +92,7 @@ const ListPage = () => {
                     <Typography
                       fontWeight={700}
                       fontSize={14}
-                      style={{ alignSelf: "center" }}
+                     className="icon"
                     >
                       ({item.vote_average})
                     </Typography>

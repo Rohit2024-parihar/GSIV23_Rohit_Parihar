@@ -17,7 +17,7 @@ interface movieData {
   vote_average: number;
   poster_path: string;
 }
-interface intial {
+interface productData {
   loading: boolean;
   data: movieData[];
   error: boolean;
@@ -41,7 +41,7 @@ export const fetchProduct = createAsyncThunk(
   }
 );
 
-const initialState: intial = {
+const initialState: productData = {
   loading: true,
   data: [],
   error: false,
