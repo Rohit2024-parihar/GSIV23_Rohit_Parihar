@@ -1,7 +1,7 @@
 import React from "react";
 
 const ShimmerPage = () => {
-  const shimmerArray: any[] = new Array(20).fill("");
+  const shimmerArray = new Array(20).fill("");
   return (
     <>
       {shimmerArray.map((e,i) => {

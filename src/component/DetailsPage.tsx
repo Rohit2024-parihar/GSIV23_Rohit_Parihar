@@ -6,7 +6,7 @@ import "../App.css";
 
 export const DetailsPage = () => {
   const { state } = useLocation();
-  console.log(state)
+
 
   return (
     <Paper>

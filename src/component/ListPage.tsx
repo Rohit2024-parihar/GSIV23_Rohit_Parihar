@@ -17,7 +17,6 @@ const ListPage = () => {
   const { loading, data} = useSelector(
     (state: RootState) => state.latestProduct
   );
-  const shimmerArray: any[] = new Array(20).fill("");
   const loader = useRef(null);
   const navigate = useNavigate();
   const dispatch = useDispatch<AppDispatch>();
@@ -48,9 +47,7 @@ const ListPage = () => {
     };
     const observer = new IntersectionObserver(handleObserver, option);
     if (loader.current) observer.observe(loader.current);
-  }, [handleObserver]);
-  console.log(shimmerArray);
- 
+  }, [handleObserver]); 
 
   return (
     <Box>
