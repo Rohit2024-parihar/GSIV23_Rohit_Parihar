@@ -51,7 +51,7 @@ const ListPage = () => {
 
   return (
     <Box>
-      <Paper className="Container">
+      <Paper className="container">
         <TextField
           onChange={(e) => handleChange(e)}
           id="filled-basic"
@@ -67,9 +67,9 @@ const ListPage = () => {
             ),
           }}
         />
-        <HomeIcon className="Icon" />
+        <HomeIcon className="icon" />
       </Paper>
-      <div className="Card-Container">
+      <div className="card-container">
         {data.length === 0
           ? <ShimmerPage/>
           : data?.map((item, index) => {
@@ -84,7 +84,7 @@ const ListPage = () => {
                     src={`https://image.tmdb.org/t/p/original/${item.poster_path}`}
                     alt={`No Data ${item.title}`}
                   />
-                  <div className="Card-Child">
+                  <div className="card-child">
                     <Typography fontWeight={900} fontSize={14}>
                       {item.title?.slice(0, 20)}
                     </Typography>
@@ -96,7 +96,7 @@ const ListPage = () => {
                       ({item.vote_average})
                     </Typography>
                   </div>
-                  <Typography fontWeight={400} fontSize={12} className="Summary">
+                  <Typography fontWeight={400} fontSize={12} className="summary">
                     {item.overview?.slice(0, 80)}
                   </Typography>
                 </Paper>

@@ -10,19 +10,19 @@ export const DetailsPage = () => {
 
   return (
     <Paper>
-      <Paper className="Details-Container">
+      <Paper className="details-container">
         <h4>Movie Details</h4>
-        <HomeIcon className="Icon" />
+        <HomeIcon className="icon" />
       </Paper>
       <Grid container>
         <Grid item xs={3}>
           <img
-            className="Details-Image"
+            className="details-image"
             src={`https://image.tmdb.org/t/p/original/${state.poster_path}`}
             alt={`No Data ${state.title}`}
           />
         </Grid>
-        <Grid item xs={9} className="Details-Info">
+        <Grid item xs={9} className="details-info">
          <div className="row">
           <Typography fontWeight={900}  paddingLeft={"4px"} fontSize={16}> 
            {state.title}
@@ -65,7 +65,7 @@ export const DetailsPage = () => {
             {state.vote_count}
           </Typography>
           </div>
-          <Typography fontWeight={400} fontSize={14} paddingLeft={"4px"} className="Details-Overview">
+          <Typography fontWeight={400} fontSize={14} paddingLeft={"4px"} className="details-overview">
             {state.overview}
           </Typography>
         </Grid>
