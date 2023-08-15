@@ -22,7 +22,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.card {
+.card-head {
   width: 250px;
   border-radius: 8px;
   margin-top: 16px;

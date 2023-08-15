@@ -76,11 +76,11 @@ const ListPage = () => {
               return (
                 <Paper
                   key={item.id}
-                  className="Card"
+                  className="card-head"
                   onClick={() => navigate("/details", { state: item })}
                 >
                   <img
-                    className="Image"
+                    className="image"
                     src={`https://image.tmdb.org/t/p/original/${item.poster_path}`}
                     alt={`No Data ${item.title}`}
                   />
