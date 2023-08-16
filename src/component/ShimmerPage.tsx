@@ -7,15 +7,15 @@ const ShimmerPage = () => {
       {shimmerArray.map((e, i) => {
         return (
           <div key={i} className="card">
-            <div className="shimmerBG media"></div>
+            <div className="bg media"></div>
             <div className="p-32">
-              <div className="shimmerBG title-line"></div>
-              <div className="shimmerBG title-line end"></div>
-              <div className="shimmerBG content-line m-t-24"></div>
-              <div className="shimmerBG content-line"></div>
-              <div className="shimmerBG content-line"></div>
-              <div className="shimmerBG content-line"></div>
-              <div className="shimmerBG content-line end"></div>
+              <div className="bg title-line"></div>
+              <div className="bg title-line end"></div>
+              <div className="bg content-line m-t-24"></div>
+              <div className="bg content-line"></div>
+              <div className="bg content-line"></div>
+              <div className="bg content-line"></div>
+              <div className="bg content-line end"></div>
             </div>
           </div>
         );

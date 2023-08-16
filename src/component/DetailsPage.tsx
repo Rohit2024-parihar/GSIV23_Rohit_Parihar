@@ -21,14 +21,14 @@ export const DetailsPage = () => {
         </button>
       </Paper>
       <Grid container>
-        <Grid item xs={3}>
+        <Grid item lg={3} xs={5}>
           <img
             className="details-image"
             src={`https://image.tmdb.org/t/p/original/${state?.poster_path}`}
             alt={`No Data ${state?.title}`}
           />
         </Grid>
-        <Grid item xs={9} className="details-info">
+        <Grid item lg={9} xs={7} className="details-info">
           <div className="row">
             <Typography fontWeight={900} paddingLeft={"4px"} fontSize={16}>
               {state?.title}

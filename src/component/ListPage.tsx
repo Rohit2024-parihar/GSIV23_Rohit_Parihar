@@ -58,7 +58,7 @@ const ListPage = () => {
           variant="filled"
           placeholder="Search"
           data-testid="searchBox"
-          className="Search"
+          className="search"
           inputProps={{ "data-testid": "search" }}
           InputProps={{
             startAdornment: (
